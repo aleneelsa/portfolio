@@ -3,116 +3,219 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alene Elsa Jose| Portfolio</title>
+  <title>Alene Elsa Jose | Portfolio</title>
+  <meta name="description" content="Portfolio of Alene Elsa Jose — Computer Science & Engineering professional proficient in Python, C, and full-stack web development." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
 
-  <header>
+  <!-- ========== NAVBAR ========== -->
+  <header id="navbar">
     <nav>
-      <h1>Alene<span>Elsa Jose</span></h1>
-      <ul>
+      <a href="#" class="logo">Alene<span>Elsa Jose</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
-        <a href="https://drive.google.com/file/d/1A-hr4I8Zhr8zWd0SQ3uw8HR1WjbNy6j8/view" target="_blank" class="btn resume-btn">
-          <i class="fas fa-file-alt"></i> View Resume
-        </a>
-    
+        <li>
+          <a href="https://drive.google.com/file/d/1A-hr4I8Zhr8zWd0SQ3uw8HR1WjbNy6j8/view" target="_blank" class="btn btn-outline resume-btn">
+            <i class="fas fa-file-alt"></i> Resume
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
 
+  <!-- ========== HERO ========== -->
   <section class="hero">
-    <div class="hero-content">
-      <h2>Hello, I'm</h2>
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content reveal">
+      <p class="hero-greeting">Hello, I'm</p>
       <h1>Alene Elsa Jose</h1>
-      <p>A passionate Computer Science student </p>
-      <a href="#projects" class="btn">View My Work</a>
+      <p class="hero-tagline">Computer Science &amp; Engineering Professional</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
     </div>
   </section>
 
+  <!-- ========== ABOUT ========== -->
   <section id="about" class="section about">
-    <div class="content">
-      <img src="assests/IMG-20250627-WA0007.jpg" alt="Profile" />
-      <div>
-        <h2>About Me</h2>
-        <p>I’m a final year Computer Science student from St. Joseph’s College of Engineering and Technology, Palai. I love building creative and meaningful projects, especially those that impact lives positively.</p>
+    <div class="section-header reveal">
+      <h2>About Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-content reveal">
+      <div class="about-image-wrapper">
+        <div class="about-image-ring"></div>
+        <img src="assests/IMG-20250627-WA0007.jpg" alt="Alene Elsa Jose" />
+      </div>
+      <div class="about-text">
+        <p>
+          Computer Science and Engineering professional from SJCET Palai, currently awaiting official graduation following the completion of degree coursework. Proficient in <strong>Python</strong> and <strong>C</strong>, with a focus on logical programming and a leadership approach to technical challenges.
+        </p>
+        <p>
+          I bring an analytical perspective to software fundamentals, ensuring high-quality outputs in Software Testing, Data Analytics, and Development. Passionate about user-centric digital solutions and committed to leading technical initiatives through critical thinking and a result-oriented mindset.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Kerala, India</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-graduation-cap"></i>
+            <span>B.Tech in Computer Science</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-briefcase"></i>
+            <span>MERN Stack Intern</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- ========== PROJECTS ========== -->
   <section id="projects" class="section projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>🧵 CraftConnect</h3>
-      <p>
-        CraftConnect is a customized product marketplace connecting parents and small manufacturers.
-        It supports real-time chat, customization previews, and intuitive order management. Built using Flask, SQLite3, HTML, CSS, and JavaScript.
-      </p>
-      <div class="project-buttons">
-        <a href="https://github.com/aleneelsa/craftconnect_website" target="_blank" class="btn">
-          <i class="fab fa-github"></i> View Code on GitHub
-        </a>
-        <!-- Optional: If hosted live -->
-        <!-- <a href="https://your-live-link.com" target="_blank" class="btn">
-          <i class="fas fa-globe"></i> Live Demo
-        </a> -->
+    <div class="section-header reveal">
+      <h2>Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Project 1: CraftConnect -->
+      <div class="project-card reveal">
+        <div class="project-icon"><i class="fas fa-shopping-bag"></i></div>
+        <h3>CraftConnect</h3>
+        <p>
+          Designed and developed key features including a real-time chat interface (frontend and backend) for direct communication between customers and manufacturers. Built shopping cart functionality and contributed to manufacturer dashboard features such as Manage Orders, Check Messages, and Manage Projects.
+        </p>
+        <div class="project-tech">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python (Flask)</span><span>SQLite</span><span>WebSockets</span>
+        </div>
+        <div class="project-buttons">
+          <a href="https://github.com/aleneelsa/craftconnect_website" target="_blank" class="btn btn-sm">
+            <i class="fab fa-github"></i> View Code
+          </a>
+        </div>
       </div>
+
+      <!-- Project 2: PostJourney -->
+      <div class="project-card reveal">
+        <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+        <h3>PostJourney</h3>
+        <p>
+          Designed and developed a post-operative rehabilitation platform with real-time doctor-patient chat, AI-powered exercise monitoring using pose estimation, and live health vitals tracking via BLE wristband (HR, SpO2, Activity). Built multi-role dashboards, medical equipment marketplace, caregiver booking, and admin panel.
+        </p>
+        <div class="project-tech">
+          <span>React Native</span><span>Node.js</span><span>MongoDB</span><span>Python (FastAPI)</span><span>MediaPipe</span><span>WebRTC</span><span>BLE</span>
+        </div>
+        <div class="project-buttons">
+          <a href="https://github.com/aleneelsa" target="_blank" class="btn btn-sm">
+            <i class="fab fa-github"></i> View Code
+          </a>
+        </div>
+      </div>
+
     </div>
   </section>
-  
 
+  <!-- ========== SKILLS ========== -->
   <section id="skills" class="section skills">
-    <h2>Skills</h2>
-    <ul>
-      
-      <li>HTML/CSS/JavaScript</li>
-      <li>Python</li>
+    <div class="section-header reveal">
+      <h2>Skills</h2>
+      <div class="section-line"></div>
+    </div>
 
-      <li>Flask</li>
-      <li>SQLite3</li>
-      <li>UI/UX Design</li>
-      <li>Web Development</li>
-      <li>Socket.IO</li>
-      <li>Teamwork</li>
-      <li>Communication Skills</li>
+    <div class="skills-container reveal">
+      <!-- Technical Skills -->
+      <div class="skill-category">
+        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+        <div class="skill-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>C</span>
+        </div>
+      </div>
 
-    </ul>
-  </section>
+      <div class="skill-category">
+        <h3><i class="fas fa-layer-group"></i> Frameworks &amp; Libraries</h3>
+        <div class="skill-tags">
+          <span>React (basics)</span><span>Flask (basics)</span>
+        </div>
+      </div>
 
-  <section id="contact" class="section contact">
-    <h2>Contact Me</h2>
-    <div class="contact-info">
-      <p><strong>Email:</strong> <a href="mailto:your-email@example.com">alenejose20082004@gmail.com</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+919999999999">+91 95260 66072</a></p>
-      <div class="contact-icons">
-        <a href="https://www.linkedin.com/in/alene-elsa-jose-287001280/" target="_blank" title="LinkedIn">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
-        </a>
-        <a href="https://github.com/aleneelsa" target="_blank" title="GitHub">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
-        </a>
-        <a href="https://instagram.com/alene_ej" target="_blank" title="Instagram">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
-        </a>
+      <div class="skill-category">
+        <h3><i class="fas fa-database"></i> Databases</h3>
+        <div class="skill-tags">
+          <span>SQL</span><span>MySQL</span><span>SQLite</span><span>MongoDB</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-tools"></i> Tools</h3>
+        <div class="skill-tags">
+          <span>Git</span><span>VS Code</span><span>Canva</span><span>Microsoft Office</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-users"></i> Soft Skills</h3>
+        <div class="skill-tags soft">
+          <span>Teamwork</span><span>Leadership</span><span>Creativity</span><span>Communication</span><span>Initiative</span><span>Adaptability</span><span>Commitment</span>
+        </div>
       </div>
     </div>
   </section>
-  
 
-  <footer>
-   
-    <div class="socials">
-      
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section contact">
+    <div class="section-header reveal">
+      <h2>Contact Me</h2>
+      <div class="section-line"></div>
     </div>
+    <div class="contact-content reveal">
+      <div class="contact-card">
+        <i class="fas fa-envelope"></i>
+        <h4>Email</h4>
+        <a href="mailto:alenejose20082004@gmail.com">alenejose20082004@gmail.com</a>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-phone"></i>
+        <h4>Phone</h4>
+        <a href="tel:+919526066072">+91 95260 66072</a>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h4>Location</h4>
+        <p>Kerala, India</p>
+      </div>
+    </div>
+    <div class="contact-socials reveal">
+      <a href="https://www.linkedin.com/in/alene-elsa-jose-287001280/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/aleneelsa" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://instagram.com/alene_ej" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>&copy; 2026 Alene Elsa Jose. All rights reserved.</p>
   </footer>
 
 </body>
 </html>
-
-
 
 
