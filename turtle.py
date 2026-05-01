@@ -25,3 +25,4 @@ class NumberFieldDemo(EasyFrame):
         number = self.fahrenField.getNumber()
         result = ((number - 32) * 5) / 9
         self.celsiusField.setNumber(result)
+
